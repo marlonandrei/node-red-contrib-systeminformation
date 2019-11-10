@@ -50,18 +50,15 @@ module.exports = function(RED) {
                                 msg.baseboard = databaseboard;
                                 msg.chassis = datachassis;
                                 node.send(msg);
-                            })
-                        })
-                    })
-                })
-                .catch(error => console.error(error));    
+                            }).catch(error => console.error(error));    
+                        }).catch(error => console.error(error));    
+                    }).catch(error => console.error(error));    
+                }).catch(error => console.error(error));    
             }            
 
         });
     }
     RED.nodes.registerType("System",SystemNode);
-
-
 
 
 }
