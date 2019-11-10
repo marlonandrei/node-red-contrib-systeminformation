@@ -11,9 +11,9 @@
     "license": "Apache-2.0",
     "node-red": {
         "nodes": {
-            "System": "system/system.js",
-            "Cpu": "system/cpu.js",
-            "Memory": "system/memory.js"
+            "SystemInfo": "system/system.js",
+            "CpuInfo": "system/cpu.js",
+            "MemoryInfo": "system/memory.js"
         }
     },
     "dependencies": {

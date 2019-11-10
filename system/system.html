@@ -1,6 +1,6 @@
 <script type="text/javascript">
     
-    RED.nodes.registerType('System',{
+    RED.nodes.registerType('SystemInfo',{
         category: 'System Information',
         color: '#00A5FE',
         defaults: {
@@ -11,13 +11,13 @@
         outputs:1,
         icon: "icon-server",
         label: function() {
-            return this.name||"System";
+            return this.name||"SystemInfo";
         }
     });
 
 </script>
 
-<script type="text/x-red" data-template-name="System">
+<script type="text/x-red" data-template-name="SystemInfo">
     <div class="form-row">
         <div class="linha1" style="padding:5px;">
             <label for="node-input-name"><i class="icon-tag"></i> Name</label>
@@ -36,7 +36,7 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="System">
+<script type="text/x-red" data-help-name="SystemInfo">
     <p>A node for work with npm module systeminformation, specified: System - Hardware.</p>
 </script>
 

@@ -53,6 +53,6 @@ module.exports = function(RED) {
             
         });
     };
-    RED.nodes.registerType("Cpu",CpuNode);
+    RED.nodes.registerType("CpuInfo",CpuNode);
 
 }

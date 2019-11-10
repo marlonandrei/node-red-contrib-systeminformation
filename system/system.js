@@ -58,7 +58,7 @@ module.exports = function(RED) {
 
         });
     }
-    RED.nodes.registerType("System",SystemNode);
+    RED.nodes.registerType("SystemInfo",SystemNode);
 
 
 }

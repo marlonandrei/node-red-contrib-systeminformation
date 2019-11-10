@@ -27,6 +27,6 @@ module.exports = function(RED) {
             
         });
     };
-    RED.nodes.registerType("Memory",MemoryNode);
+    RED.nodes.registerType("MemoryInfo",MemoryNode);
 
 }

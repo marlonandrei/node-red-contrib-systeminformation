@@ -1,6 +1,6 @@
 <script type="text/javascript">
     
-    RED.nodes.registerType('Memory',{
+    RED.nodes.registerType('MemoryInfo',{
         category: 'System Information',
         color: '#FFFF00',
         defaults: {
@@ -9,15 +9,15 @@
         },
         inputs:1,
         outputs:1,
-        icon: "",
+        icon: "icon-server",
         label: function() {
-            return this.name||"Memory";
+            return this.name||"MemoryInfo";
         }
     });
     
 </script>
 
-<script type="text/x-red" data-template-name="Memory">
+<script type="text/x-red" data-template-name="MemoryInfo">
     <div class="form-row">
         <div class="linha1" style="padding:5px;">
             <label for="node-input-name"><i class="icon-tag"></i> Name</label>
@@ -34,6 +34,6 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="Memory">
+<script type="text/x-red" data-help-name="MemoryInfo">
     <p>A node for work with npm module systeminformation, specified: Memory - Hardware.</p>
 </script>

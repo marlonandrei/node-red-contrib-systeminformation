@@ -1,6 +1,6 @@
 <script type="text/javascript">
     
-    RED.nodes.registerType('Cpu',{
+    RED.nodes.registerType('CpuInfo',{
         category: 'System Information',
         color: '#26FF93',
         defaults: {
@@ -11,13 +11,13 @@
         outputs:1,
         icon: "icon-microchip",
         label: function() {
-            return this.name||"Cpu";
+            return this.name||"CpuInfo";
         }
     });
     
 </script>
 
-<script type="text/x-red" data-template-name="Cpu">
+<script type="text/x-red" data-template-name="CpuInfo">
     <div class="form-row">
         <div class="linha1" style="padding:5px;">
             <label for="node-input-name"><i class="icon-tag"></i> Name</label>
@@ -37,6 +37,6 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="Cpu">
+<script type="text/x-red" data-help-name="CpuInfo">
     <p>A node for work with npm module systeminformation, specified: Cpu - Hardware.</p>
 </script>
