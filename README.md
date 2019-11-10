@@ -7,7 +7,7 @@ A module for NODE-RED that implements an interface to the functions of NODE's sy
 The System Information module needs the following requirements:
 
 ```
-[System Information](https://systeminformation.io/) - System Information Website
+System Information - https://systeminformation.io/
 ```
 
 ### Installing
