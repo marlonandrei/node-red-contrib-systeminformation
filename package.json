@@ -13,7 +13,8 @@
         "nodes": {
             "SystemInfo": "system/system.js",
             "CpuInfo": "system/cpu.js",
-            "MemoryInfo": "system/memory.js"
+            "MemoryInfo": "system/memory.js",
+            "BatteryInfo": "system/battery.js"
         }
     },
     "dependencies": {

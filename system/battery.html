@@ -1,6 +1,6 @@
 <script type="text/javascript">
     
-    RED.nodes.registerType('SystemInfo',{
+    RED.nodes.registerType('BatteryInfo',{
         category: 'System Information',
         color: '#26FF93',
         defaults: {
@@ -11,13 +11,13 @@
         outputs:1,
         icon: "icon-server",
         label: function() {
-            return this.name||"SystemInfo";
+            return this.name||"BatteryInfo";
         }
     });
-
+    
 </script>
 
-<script type="text/x-red" data-template-name="SystemInfo">
+<script type="text/x-red" data-template-name="BatteryInfo">
     <div class="form-row">
         <div class="linha1" style="padding:5px;">
             <label for="node-input-name"><i class="icon-tag"></i> Name</label>
@@ -26,19 +26,12 @@
         <div class="linha2" style="padding:5px;">
             <label for="node-input-option"><i class="icon-archive"></i> Option</label>
             <select name="node-input-option" id="node-input-option">
-                <option value="1">System</option>
-                <option value="2">Bios</option>
-                <option value="3">Baseboard</option>
-                <option value="4">Chassis</option>
-                <option value="5">All</option>
+                <option value="1" selected>Battery</option>
             </select>
         </div>        
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="SystemInfo">
-    <p>A node for work with npm module systeminformation, specified: System - Hardware.</p>
+<script type="text/x-red" data-help-name="BatteryInfo">
+    <p>A node for work with npm module systeminformation, specified: Battery - Hardware.</p>
 </script>
-
-
-
