@@ -1,23 +1,23 @@
 <script type="text/javascript">
     
-    RED.nodes.registerType('System',{
+    RED.nodes.registerType('Cpu',{
         category: 'System Information',
-        color: '#00A5FE',
+        color: '#26FF93',
         defaults: {
             name: {value:""},
             option: {value:"1"}
         },
         inputs:1,
         outputs:1,
-        icon: "icon-server",
+        icon: "icon-microchip",
         label: function() {
-            return this.name||"System";
+            return this.name||"Cpu";
         }
     });
-
+    
 </script>
 
-<script type="text/x-red" data-template-name="System">
+<script type="text/x-red" data-template-name="Cpu">
     <div class="form-row">
         <div class="linha1" style="padding:5px;">
             <label for="node-input-name"><i class="icon-tag"></i> Name</label>
@@ -26,19 +26,17 @@
         <div class="linha2" style="padding:5px;">
             <label for="node-input-option"><i class="icon-archive"></i> Option</label>
             <select name="node-input-option" id="node-input-option">
-                <option value="1">System</option>
-                <option value="2">Bios</option>
-                <option value="3">Baseboard</option>
-                <option value="4">Chassis</option>
-                <option value="5">All</option>
+                <option value="1" selected>Cpu</option>
+                <option value="2">Cpu Flags</option>
+                <option value="3">Cpu Cache</option>
+                <option value="4">Cpu Speed</option>
+                <option value="5">Cpu Temperature</option>
+                <option value="6">All</option>
             </select>
         </div>        
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="System">
-    <p>A node for work with npm module systeminformation, specified: System - Hardware.</p>
+<script type="text/x-red" data-help-name="Cpu">
+    <p>A node for work with npm module systeminformation, specified: Cpu - Hardware.</p>
 </script>
-
-
-

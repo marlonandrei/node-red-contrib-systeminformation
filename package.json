@@ -12,7 +12,7 @@
     "node-red": {
         "nodes": {
             "System": "system/system.js",
-            "Cpu": "system/system.js"
+            "Cpu": "system/cpu.js"
         }
     },
     "dependencies": {
