@@ -1,0 +1,42 @@
+<script type="text/javascript">
+    
+    RED.nodes.registerType('OsInfo',{
+        category: 'System Information',
+        color: '#26FF93',
+        defaults: {
+            name: {value:""},
+            option: {value:"1"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "icon-server",
+        label: function() {
+            return this.name||"OsInfo";
+        }
+    });
+    
+</script>
+
+<script type="text/x-red" data-template-name="OsInfo">
+    <div class="form-row">
+        <div class="linha1" style="padding:5px;">
+            <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+            <input type="text" id="node-input-name" placeholder="Name">
+        </div>
+        <OsInfo class="linha2" style="padding:5px;">
+            <label for="node-input-option"><i class="icon-archive"></i> Option</label>
+            <select name="node-input-option" id="node-input-option">
+                <option value="1">OS Info</option>
+                <option value="2">UUId</option>
+                <option value="3">Shell</option>
+                <option value="4">Versions</option>
+                <option value="5">Users</option>
+                <option value="6">All</option>
+            </select>
+        </div>        
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="OsInfo">
+    <p>A node for work with npm module systeminformation, specified: OS - Hardware.</p>
+</script>

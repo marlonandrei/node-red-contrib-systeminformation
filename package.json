@@ -15,7 +15,9 @@
             "CpuInfo": "system/cpu.js",
             "MemoryInfo": "system/memory.js",
             "BatteryInfo": "system/battery.js",
-            "GraphicsInfo": "system/graphics.js"
+            "GraphicsInfo": "system/graphics.js",
+            "OsInfo": "system/os.js",
+            "ProcessInfo": "system/process.js"
         }
     },
     "dependencies": {
