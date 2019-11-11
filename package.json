@@ -18,7 +18,8 @@
             "GraphicsInfo": "system/graphics.js",
             "OsInfo": "system/os.js",
             "ProcessInfo": "system/process.js",
-            "DisksInfo": "system/disks.js"
+            "DisksInfo": "system/disks.js",
+            "NetworkInfo": "system/network.js"
         }
     },
     "dependencies": {
