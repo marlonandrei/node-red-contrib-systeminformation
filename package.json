@@ -17,7 +17,8 @@
             "BatteryInfo": "system/battery.js",
             "GraphicsInfo": "system/graphics.js",
             "OsInfo": "system/os.js",
-            "ProcessInfo": "system/process.js"
+            "ProcessInfo": "system/process.js",
+            "DisksInfo": "system/disks.js"
         }
     },
     "dependencies": {
