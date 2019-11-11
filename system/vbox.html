@@ -1,6 +1,6 @@
 <script type="text/javascript">
     
-    RED.nodes.registerType('CpuInfo',{
+    RED.nodes.registerType('VboxInfo',{
         category: 'System Information',
         color: '#26FF93',
         defaults: {
@@ -9,15 +9,15 @@
         },
         inputs:1,
         outputs:1,
-        icon: "font-awesome/fa-microchip",
+        icon: "font-awesome/fa-laptop",
         label: function() {
-            return this.name||"CpuInfo";
+            return this.name||"VboxInfo";
         }
     });
     
 </script>
 
-<script type="text/x-red" data-template-name="CpuInfo">
+<script type="text/x-red" data-template-name="VboxInfo">
     <div class="form-row">
         <div class="linha1" style="padding:5px;">
             <label for="node-input-name"><i class="icon-tag"></i> Name</label>
@@ -26,17 +26,12 @@
         <div class="linha2" style="padding:5px;">
             <label for="node-input-option"><i class="icon-archive"></i> Option</label>
             <select name="node-input-option" id="node-input-option">
-                <option value="1" selected>Cpu</option>
-                <option value="2">Cpu Flags</option>
-                <option value="3">Cpu Cache</option>
-                <option value="4">Cpu Speed</option>
-                <option value="5">Cpu Temperature</option>
-                <option value="6">All</option>
+                <option value="1">Virtual Box</option>
             </select>
         </div>        
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="CpuInfo">
-    <p>A node for work with npm module systeminformation, specified: Cpu - Hardware.</p>
+<script type="text/x-red" data-help-name="VboxInfo">
+    <p>A node for work with npm module systeminformation, specified: Virtual Box - Hardware.</p>
 </script>
