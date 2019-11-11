@@ -20,7 +20,8 @@
             "ProcessInfo": "system/process.js",
             "DisksInfo": "system/disks.js",
             "NetworkInfo": "system/network.js",
-            "WifiInfo": "system/wifi.js"
+            "WifiInfo": "system/wifi.js",
+            "VBoxInfo": "system/vbox.js"
         }
     },
     "dependencies": {
