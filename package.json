@@ -19,7 +19,8 @@
             "OsInfo": "system/os.js",
             "ProcessInfo": "system/process.js",
             "DisksInfo": "system/disks.js",
-            "NetworkInfo": "system/network.js"
+            "NetworkInfo": "system/network.js",
+            "WifiInfo": "system/wifi.js"
         }
     },
     "dependencies": {
