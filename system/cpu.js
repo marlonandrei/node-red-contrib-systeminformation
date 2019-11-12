@@ -10,6 +10,7 @@ module.exports = function(RED) {
             if (config.option == "1") {
                 si.cpu()
                 .then(data => {
+                    msg.topic = "cpu";
                     msg.payload = data;
                     node.send(msg);
                 })
@@ -17,6 +18,7 @@ module.exports = function(RED) {
             } else if (config.option == "2") {
                 si.cpuFlags()
                 .then(data => {
+                    msg.topic = "cpuFlags";
                     msg.payload = data;
                     node.send(msg);
                 })
@@ -24,6 +26,7 @@ module.exports = function(RED) {
             } else if (config.option == "3") {
                 si.cpuCache()
                 .then(data => {
+                    msg.topic = "cpuCache";
                     msg.payload = data;
                     node.send(msg);
                 })
@@ -31,6 +34,7 @@ module.exports = function(RED) {
             } else if (config.option == "4") {
                 si.cpuCurrentspeed()
                 .then(data => {
+                    msg.topic = "cpuCurrentspeed";
                     msg.payload = data;
                     node.send(msg);
                 })
@@ -38,6 +42,7 @@ module.exports = function(RED) {
             } else if (config.option == "5") {
                 si.cpuTemperature()
                 .then(data => {
+                    msg.topic = "cpuTemperature";
                     msg.payload = data;
                     node.send(msg);
                 })
@@ -45,6 +50,7 @@ module.exports = function(RED) {
             } else if (config.option == "6") {
                 si.cpu()
                 .then(data => {
+                    msg.topic = "cpu";
                     msg.payload = data;
                     node.send(msg);
                 })

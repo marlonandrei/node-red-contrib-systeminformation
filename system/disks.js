@@ -9,6 +9,7 @@ module.exports = function(RED) {
             const si = require('systeminformation');
             if (config.option == "1") {
                 si.diskLayout()
+                
                 .then(data => {
                     msg.payload = data;
                     node.send(msg);
